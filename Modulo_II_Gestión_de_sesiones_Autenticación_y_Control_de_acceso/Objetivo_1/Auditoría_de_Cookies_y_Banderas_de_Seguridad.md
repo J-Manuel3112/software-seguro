@@ -30,7 +30,7 @@ Si la cookie no tiene `Secure`, el navegador la enviará también por HTTP no ci
 ## Evidencia Fotográfica
 
 **Cookies de Disney+ (HttpOnly: false, Secure: false):**
-![Cookies de Disney+](./disney.png)
+![Cookies de Disney+](./Disney.png)
 
 **Cookies de MercadoLibre (HttpOnly: true, Secure: true):**
 ![Cookies de MercadoLibre](./MercadoLibre.png)
