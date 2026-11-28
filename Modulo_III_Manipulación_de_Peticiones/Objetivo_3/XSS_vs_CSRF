@@ -1,0 +1,16 @@
+# Objetivo 3: XSS vs CSRF
+
+### XSS (Cross-Site Scripting):
+
+Consiste en que el atacante inyecta código malicioso en una página web legítima. Cuando la víctima visita esa página, el código se ejecuta en su navegador, permitiendo al atacante robar su sesión o realizar acciones en su nombre.
+
+### CSRF (Cross-Site Request Forgery):
+Consiste en que el atacante engaña al navegador de la víctima para que envíe una petición no deseada a un sitio web donde la víctima está autenticada. El atacante no inyecta código, solo aprovecha que el navegador adjunta automáticamente la cookie de sesión.
+
+## Diferencia
+
+La diferencia clave es dónde se ejecuta el código malicioso:
+
+*   **En XSS:** El código malicioso se ejecuta dentro del sitio legítimo. El atacante inyecta el script en la página y el navegador de la víctima lo ejecuta como si fuera parte del sitio.
+
+*   **En CSRF:** El código malicioso no existe. El atacante solo crea una página externa que fuerza al navegador a hacer una petición al sitio legítimo. El servidor recibe la petición con la cookie válida y la procesa, sin saber que fue originada desde otro sitio.
